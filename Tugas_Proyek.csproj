@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F65E6981-1A14-4807-80BB-4175C72923A7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Tugas_Proyek</RootNamespace>
+    <AssemblyName>Tugas_Proyek</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGame.Designer.cs">
+      <DependentUpon>FormGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formisi.Designer.cs">
+      <DependentUpon>Formisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPermainan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPermainan.Designer.cs">
+      <DependentUpon>FormPermainan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPermainanSedang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPermainanSedang.Designer.cs">
+      <DependentUpon>FormPermainanSedang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPermainanSulit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPermainanSulit.Designer.cs">
+      <DependentUpon>FormPermainanSulit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formpilih.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formpilih.Designer.cs">
+      <DependentUpon>Formpilih.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReplay.Designer.cs">
+      <DependentUpon>FormReplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormScore.Designer.cs">
+      <DependentUpon>FormScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSetting.Designer.cs">
+      <DependentUpon>FormSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormGame.resx">
+      <DependentUpon>FormGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formisi.resx">
+      <DependentUpon>Formisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPermainan.resx">
+      <DependentUpon>FormPermainan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPermainanSedang.resx">
+      <DependentUpon>FormPermainanSedang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPermainanSulit.resx">
+      <DependentUpon>FormPermainanSulit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formpilih.resx">
+      <DependentUpon>Formpilih.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReplay.resx">
+      <DependentUpon>FormReplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormScore.resx">
+      <DependentUpon>FormScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSetting.resx">
+      <DependentUpon>FormSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\bgproyek.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\gambarawal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\head_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\head_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\head_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\head_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\SnakeClassic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\straight_horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\straight_vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\tail_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\tail_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\tail_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\tail_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\turn_left_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\turn_left_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\turn_right_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\turn_right_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\applegold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\applegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\applered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\Bombnew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\bghs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\formisi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\highscr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\rintangan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\soundOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\soundOn.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
